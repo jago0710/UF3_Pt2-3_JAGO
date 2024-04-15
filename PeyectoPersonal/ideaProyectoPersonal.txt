@@ -1,0 +1,30 @@
+Entendido, aquí tienes una versión actualizada del proyecto que utiliza interfaces en lugar de clases abstractas:
+
+**Nombre del Proyecto:** Sistema de Gestión de Inventario para Tienda de Electrónica en Java con Herencia y Interfaces
+
+**Descripción:**
+Este sistema permitirá a los propietarios o empleados de una tienda de electrónica gestionar eficientemente el inventario de productos que se tienen en el almacén. Podrán agregar nuevos productos al inventario, actualizar la información de los productos existentes, eliminar productos que ya no se almacenan y ver una lista completa de todos los productos disponibles en el almacén.
+
+**Componentes:**
+
+1. **Interfaz Producto:** Esta interfaz representará las operaciones comunes que pueden realizar todos los productos en el almacén, como obtener el nombre, la descripción, el precio de compra, el precio de venta y la cantidad en stock.
+
+2. **Clase ProductoElectrónico:** Esta clase implementará la interfaz Producto y representará productos electrónicos en el almacén, como teléfonos móviles, laptops, cámaras, etc. Puede tener atributos adicionales específicos para este tipo de productos, como capacidad de almacenamiento, tamaño de pantalla, etc.
+
+3. **Clase ProductoAccesorio:** Esta clase implementará la interfaz Producto y representará accesorios para productos electrónicos, como fundas para teléfonos, cargadores, auriculares, etc. Puede tener atributos adicionales específicos para este tipo de productos.
+
+4. **Clase Almacén:** Esta clase actuará como el punto central del sistema y contendrá una lista de objetos Producto. Tendrá métodos para agregar, actualizar y eliminar productos del inventario, así como para mostrar la lista de productos disponibles.
+
+**Funcionalidades:**
+
+- **Agregar Producto:** Los propietarios o empleados podrán agregar nuevos productos al inventario especificando su nombre, descripción, precio de compra, precio de venta, cantidad inicial en stock y tipo de producto (electrónico o accesorio).
+
+- **Actualizar Producto:** Se podrán actualizar los detalles de un producto existente en el inventario, como su descripción, precio de compra, precio de venta o cantidad en stock.
+
+- **Eliminar Producto:** Se permitirá eliminar productos que ya no se almacenan en el inventario.
+
+- **Visualización de Productos:** Se mostrará una lista completa de todos los productos disponibles en el almacén, organizados por tipo de producto.
+
+**Tecnologías sugeridas:** Para implementar este proyecto se utilizará el lenguaje de programación Java. Puedes optar por una interfaz de línea de comandos para la interacción con el usuario o, si prefieres, una interfaz gráfica de usuario utilizando JavaFX.
+
+Este proyecto proporcionará una valiosa experiencia práctica en el diseño y desarrollo de aplicaciones Java orientadas a objetos, haciendo uso de herencia e interfaces para gestionar diferentes tipos de productos en el almacén de una tienda de electrónica. Además, será una oportunidad para adquirir habilidades en el desarrollo de sistemas de gestión de inventario, que son fundamentales en varios sectores del comercio minorista.

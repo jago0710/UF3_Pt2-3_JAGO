@@ -1,0 +1,14 @@
+Ejemplos de Productos Electrónicos:
+
+Teléfono móvil: iPhone 13 Pro, pantalla OLED, precio de compra $600, precio de venta $800, cantidad en stock 20.
+Laptop: MacBook Pro, procesador Intel Core i7, precio de compra $1200, precio de venta $1500, cantidad en stock 15.
+Cámara digital: Canon EOS R, lente intercambiable, precio de compra $800, precio de venta $1000, cantidad en stock 10.
+Auriculares Bluetooth: Sony WH-1000XM4, cancelación de ruido, precio de compra $150, precio de venta $200, cantidad en stock 30.
+Tableta: iPad Air, pantalla táctil de 10 pulgadas, precio de compra $300, precio de venta $400, cantidad en stock 25.
+Ejemplos de Accesorios:
+
+Funda para teléfono: Silicona, precio de compra $10, precio de venta $20, cantidad en stock 50.
+Cargador portátil: USB-C, capacidad de 20000mAh, precio de compra $30, precio de venta $40, cantidad en stock 20.
+Mouse inalámbrico: Bluetooth, ergonómico, precio de compra $20, precio de venta $30, cantidad en stock 15.
+Funda para tableta: Cuero, elegante, precio de compra $15, precio de venta $25, cantidad en stock 30.
+Cable HDMI: HDMI, alta velocidad, precio de compra $5, precio de venta $10, cantidad en stock 40.

@@ -1,0 +1,14 @@
+Quants objectes Alumne es creen al programa?
+
+    --- En total crea a 3 Alumnos.
+
+ Les assignacions entre variables del tipus Alumne (com per exemple alumne3 = alumne1) fan
+una còpia de l'objecte?
+
+    --- Si, hace una copia del los atributos del objeto y lo asigna al otro objeto.
+
+ Les assignacions entre variables del tipus Alumne (com per exemple alumne3 = alumne1) fan
+que les dues variables apuntin al mateix objecte (és a dir podem accedir al mateix objecte amb els
+dos noms: alumne1 i alumne3)?
+
+    --- No, porque se comportan como objetos independientes, pero con los mismo atributos.

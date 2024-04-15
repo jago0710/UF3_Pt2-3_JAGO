@@ -1,0 +1,158 @@
+// Interfaz Producto
+interface Producto {
+    String getNombre();
+    String getDescripcion();
+    double getPrecioCompra();
+    double getPrecioVenta();
+    int getCantidad();
+}
+
+// Clase ProductoElectronico que implementa la interfaz Producto
+class ProductoElectronico implements Producto {
+    private String nombre;
+    private String descripcion;
+    private double precioCompra;
+    private double precioVenta;
+    private int cantidad;
+    private String modelo; // Atributo específico para productos electrónicos
+
+    public ProductoElectronico(String nombre, String descripcion, double precioCompra, double precioVenta, int cantidad, String modelo) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.precioCompra = precioCompra;
+        this.precioVenta = precioVenta;
+        this.cantidad = cantidad;
+        this.modelo = modelo;
+    }
+
+    // Implementación de métodos de la interfaz Producto
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    @Override
+    public double getPrecioCompra() {
+        return precioCompra;
+    }
+
+    @Override
+    public double getPrecioVenta() {
+        return precioVenta;
+    }
+
+    @Override
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+}
+
+// Clase ProductoAccesorio que implementa la interfaz Producto
+class ProductoAccesorio implements Producto {
+    private String nombre;
+    private String descripcion;
+    private double precioCompra;
+    private double precioVenta;
+    private int cantidad;
+    private String tipo; // Atributo específico para productos accesorios
+
+    public ProductoAccesorio(String nombre, String descripcion, double precioCompra, double precioVenta, int cantidad, String tipo) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.precioCompra = precioCompra;
+        this.precioVenta = precioVenta;
+        this.cantidad = cantidad;
+        this.tipo = tipo;
+    }
+
+    // Implementación de métodos de la interfaz Producto
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    @Override
+    public double getPrecioCompra() {
+        return precioCompra;
+    }
+
+    @Override
+    public double getPrecioVenta() {
+        return precioVenta;
+    }
+
+    @Override
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+}
+
+// Clase Almacen que maneja los productos
+class Almacen {
+    private List<Producto> inventario;
+
+    public Almacen() {
+        inventario = new ArrayList<>();
+    }
+
+    public void agregarProducto(Producto producto) {
+        inventario.add(producto);
+    }
+
+    public void mostrarProductos() {
+        System.out.println("Inventario:");
+        for (Producto producto : inventario) {
+            System.out.println("Nombre: " + producto.getNombre());
+            System.out.println("Descripción: " + producto.getDescripcion());
+            System.out.println("Precio Compra: " + producto.getPrecioCompra());
+            System.out.println("Precio Venta: " + producto.getPrecioVenta());
+            System.out.println("Cantidad en Stock: " + producto.getCantidad());
+
+            // Verificar el tipo de producto y mostrar atributos específicos
+            if (producto instanceof ProductoElectronico) {
+                ProductoElectronico electronico = (ProductoElectronico) producto;
+                System.out.println("Modelo: " + electronico.getModelo());
+            } else if (producto instanceof ProductoAccesorio) {
+                ProductoAccesorio accesorio = (ProductoAccesorio) producto;
+                System.out.println("Tipo: " + accesorio.getTipo());
+            }
+
+            System.out.println("---------------------------------");
+        }
+    }
+}
+
+// Clase principal Main para probar el sistema
+public class Main {
+    public static void main(String[] args) {
+        // Crear productos
+        ProductoElectronico celular = new ProductoElectronico("Teléfono móvil", "Teléfono inteligente con pantalla HD", 300.0, 500.0, 10, "iPhone 13");
+        ProductoAccesorio funda = new ProductoAccesorio("Funda para teléfono", "Funda protectora resistente a golpes", 10.0, 20.0, 50, "Silicona");
+
+        // Crear almacén y agregar productos
+        Almacen almacen = new Almacen();
+        almacen.agregarProducto(celular);
+        almacen.agregarProducto(funda);
+
+        // Mostrar productos en el almacén
+        almacen.mostrarProductos();
+    }
+}
